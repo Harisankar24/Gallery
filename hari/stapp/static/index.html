@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Photo Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Interactive Photo Gallery</h1>
+    <div class="gallery">
+        <img src="https://img.freepik.com/premium-photo/beautiful-sunset-with-rocks-along-beach_103127-640.jpg?w=826" alt="Image 1" onclick="openModal(this)">
+        <img src="https://img.freepik.com/free-photo/asian-woman-wearing-thai-dress-costume-traditional-according-thai-culture-pha-dok-siew-waterfall-chiang-mai-thailand_335224-1164.jpg?t=st=1746165656~exp=1746169256~hmac=75797beb62249d8794236bdf046b76a4836d33d18630e248d6e2027e0b2f5161&w=826 " alt="Image 2" onclick="openModal(this)">
+        <img src="https://img.freepik.com/free-photo/water-fall_335224-985.jpg?t=st=1746165812~exp=1746169412~hmac=754d7cf17fe66ece44e4c9f9265aa1465453b00bec5d94303d1eca2d47d7570d&w=826" alt="Image 3" onclick="openModal(this)">
+        <img  src="https://img.freepik.com/free-photo/water-landscape-scenery-natural-blue-ancient_1417-1224.jpg?t=st=1746173854~exp=1746177454~hmac=18c01faf7c4bdfc47ef952b2685e5773b0cc15a0978263906c81ae5dd83e4248&w=1380" alt="Image 4" onclick="openModal(this)">
+        <img src="https://img.freepik.com/free-photo/closeup-shot-beautiful-butterfly-orange-petaled-flower_181624-13884.jpg?t=st=1746165996~exp=1746169596~hmac=4bc77808c40fb5610c9e0554ed217f859689838463aa68747751f97e574d2fc7&w=826" alt="Image 5" onclick="openModal(this)">
+    </div>
+
+    <div class="modal" id="imageModal">
+        <span onclick="closeModal()">&times;</span>
+        <img id="modalImage" src="" alt="">
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
